@@ -9,7 +9,7 @@ A Android mobile fitness application for workout tracking and progress monitorin
 
 ## Tech Stack
 
-- **Frontend:** React Native, TypeScript, Expo
+- **Frontend:** React Native (with Expo), TypeScript
 - **State Management:** Zustand
 - **Backend:** Supabase (PostgreSQL)
-- **Build:** EAS Build 
+- **Build:** EAS Build
