@@ -1,6 +1,6 @@
 # 💪 Gym Tracker App
 
-A modern Android mobile fitness application for workout tracking and progress monitoring.
+A Android mobile fitness application for workout tracking and progress monitoring.
 
 ## Features
 
