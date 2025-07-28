@@ -4,7 +4,7 @@ A personal fitness tracking app built to replace ad-heavy gym apps
 ## Demo
 ![Gym Tracker App](assets/screenshot.png)
 
-**📹 [Watch Demo Video](assets/gym-app-recording.mp4)**
+**📹 [Watch Demo Video][(assets/gym-app-recording.mp4)**](https://youtube.com/shorts/Q7iHwSymc-I)**
 
 *Scan to download the APK for Android*
 
