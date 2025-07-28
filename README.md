@@ -1,5 +1,4 @@
 # Gym Tracker App
-
 A personal fitness tracking app built to replace ad-heavy gym apps
 
 ### For Users
