@@ -3,7 +3,7 @@
 A personal fitness tracking app built to replace ad-heavy gym apps
 
 ### For Users
-![Download QR Code](assets/qr-code.png)
+![Gym Tracker App](assets/screenshot.png)
 *Scan to download the APK for Android*
 
 ## Features
