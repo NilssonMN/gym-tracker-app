@@ -26,8 +26,8 @@ export interface ProgressExercise {
   dateAdded: string;
   lastUpdated: string;
   notes?: string;
-  personalRecord?: number; // Highest weight achieved
-  totalSessions?: number; // Total workout sessions
+  personalRecord?: number; 
+  totalSessions?: number; 
 }
 
 interface ProgressStore {
@@ -37,7 +37,6 @@ interface ProgressStore {
   lastWorkoutDate: string | null;
   isLoading: boolean;
   
-  // Actions
   loadProgressData: () => Promise<void>;
   addProgressExercise: (exercise: Omit<ProgressExercise, 'id' | 'dateAdded' | 'lastUpdated'>) => Promise<void>;
   updateProgressExercise: (id: string, updates: Partial<Omit<ProgressExercise, 'id' | 'dateAdded'>>) => Promise<void>;
@@ -81,7 +80,7 @@ export const useProgressStore = create<ProgressStore>()(
           });
         } catch (error) {
           console.error('Failed to load progress data:', error);
-          // Keep existing data on error
+          
           set({ isLoading: false });
         }
       },

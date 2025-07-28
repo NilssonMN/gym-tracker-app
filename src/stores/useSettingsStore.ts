@@ -11,7 +11,6 @@ interface SettingsStore {
   defaultWeightUnit: WeightUnit;
   isLoading: boolean;
   
-  // Actions
   loadSettings: () => Promise<void>;
   setTheme: (theme: Theme) => Promise<void>;
   setDefaultWeightUnit: (unit: WeightUnit) => Promise<void>;

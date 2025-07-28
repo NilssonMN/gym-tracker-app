@@ -28,7 +28,7 @@ export default function WorkoutsScreen() {
   const startRestTimer = (seconds = restTime) => {
     setTimeRemaining(seconds);
     setShowRestTimer(true);
-    setIsTimerActive(false); // Don't auto-start, let user press start
+    setIsTimerActive(false); 
   };
 
   const stopTimer = () => {
@@ -173,7 +173,6 @@ export default function WorkoutsScreen() {
       Alert.alert('Success!', 'Workout created and progress updated!');
     }
 
-    // Reset form
     resetForm();
   };
 
@@ -687,7 +686,7 @@ const styles = StyleSheet.create({
   deleteButtonText: {
     fontSize: 16,
   },
-  // Exercise configuration styles
+  
   exerciseConfigCard: {
     backgroundColor: '#f9fafb',
     padding: 16,
@@ -740,7 +739,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     minHeight: 40,
   },
-  // Exercise detail display styles
+  
   exerciseDetailItem: {
     marginBottom: 8,
   },
@@ -779,7 +778,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
   },
-  // Rest Timer Modal Styles
+  
   timerOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',

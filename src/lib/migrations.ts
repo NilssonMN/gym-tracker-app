@@ -51,7 +51,7 @@ const defaultExercises = [
   { name: 'High Knees', category: 'cardio', muscle_group: 'Legs' },
 ];
 
-// For now, we'll use a temporary user ID since we're not implementing auth yet
+// For now we use a temporary user ID since we're not implementing auth yet
 const TEMP_USER_ID = 'temp-user-123';
 
 export const migrationService = {
@@ -107,7 +107,7 @@ export const migrationService = {
     }
   },
 
-  // Clear all data (useful for testing)
+  // Clear all data
   async clearAllData(): Promise<boolean> {
     try {
       console.log('Clearing all data...');

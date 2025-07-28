@@ -115,7 +115,6 @@ export default function ExercisesScreen() {
     
     addWorkout(newWorkout);
 
-    // Record workout completion for progress tracking
     const workoutId = Date.now().toString();
     const exercisesForProgress = workoutExercises.map(we => ({
       name: we.exercise.name,
@@ -127,7 +126,6 @@ export default function ExercisesScreen() {
     recordWorkoutCompletion(workoutId, workoutName, exercisesForProgress);
     updateWorkoutStreak();
 
-    // Reset form
     setWorkoutName('');
     setWorkoutExercises([]);
     setShowWorkoutModal(false);
@@ -166,7 +164,6 @@ export default function ExercisesScreen() {
         </View>
       )}
 
-      {/* Add Exercise Button */}
       <TouchableOpacity
         style={[
           styles.addExerciseButton,
@@ -182,7 +179,6 @@ export default function ExercisesScreen() {
         </Text>
       </TouchableOpacity>
 
-      {/* Search Bar */}
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -201,7 +197,6 @@ export default function ExercisesScreen() {
         )}
       </View>
 
-      {/* Category Filter */}
       <View style={styles.categoryContainer}>
         <TouchableOpacity
           style={[
@@ -241,7 +236,6 @@ export default function ExercisesScreen() {
         ))}
       </View>
 
-      {/* Exercise List */}
       {filteredExercises.length === 0 ? (
         <View style={styles.noResultsContainer}>
           <Text style={styles.noResultsText}>
@@ -298,7 +292,6 @@ export default function ExercisesScreen() {
       />
       )}
 
-      {/* Add Exercise Modal */}
       <Modal visible={showAddModal} animationType="slide" presentationStyle="pageSheet">
         <View style={styles.modalContainer}>
           <View style={styles.modalHeader}>
@@ -373,7 +366,6 @@ export default function ExercisesScreen() {
         </View>
       </Modal>
 
-      {/* Create Workout Modal */}
       <Modal visible={showWorkoutModal} animationType="slide" presentationStyle="pageSheet">
         <View style={styles.modalContainer}>
           <View style={styles.modalHeader}>
@@ -603,7 +595,7 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     marginTop: 4,
   },
-  // Legacy styles (keeping for compatibility)
+
   muscleGroup: {
     fontSize: 14,
     color: '#6b7280',
@@ -619,7 +611,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 8,
   },
-  // New button styles
+  
   clearButton: {
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
     paddingHorizontal: 16,
@@ -669,7 +661,7 @@ const styles = StyleSheet.create({
   addExerciseButtonTextCompact: {
     fontSize: 14,
   },
-  // Search styles
+  
   searchContainer: {
     position: 'relative',
     marginBottom: 16,
@@ -715,7 +707,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
   },
-  // Modal styles
+  
   modalContainer: {
     flex: 1,
     backgroundColor: '#f3f4f6',
@@ -813,7 +805,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
   },
-  // Exercise configuration styles (reused from workouts)
+ 
   exerciseConfigCard: {
     backgroundColor: 'white',
     padding: 16,

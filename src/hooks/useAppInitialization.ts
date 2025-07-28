@@ -28,7 +28,6 @@ export const useAppInitialization = () => {
         console.log('Running migrations...');
         await migrationService.runMigrations();
         
-        // Load all data in parallel
         console.log('Loading app data...');
         await Promise.all([
           loadExercises(),
@@ -42,7 +41,7 @@ export const useAppInitialization = () => {
       } catch (error) {
         console.error('App initialization failed:', error);
         setInitializationError(error instanceof Error ? error.message : 'Unknown error');
-        setIsInitialized(true); // Still set to true to allow app to work with local data
+        setIsInitialized(true);
       }
     };
 

@@ -24,7 +24,6 @@ interface WorkoutStore {
   currentWorkout: Workout | null;
   isLoading: boolean;
   
-  // Actions
   loadWorkouts: () => Promise<void>;
   addWorkout: (workout: Omit<Workout, 'id'>) => Promise<void>;
   updateWorkout: (workoutId: string, updatedWorkout: Omit<Workout, 'id'>) => Promise<void>;
