@@ -2,6 +2,10 @@
 
 A personal fitness tracking app built to replace ad-heavy gym apps
 
+### For Users
+![Download QR Code](assets/qr-code.png)
+*Scan to download the APK for Android*
+
 ## Features
 
 - **Workout Management** - Create custom workouts, add exercises, and track sets/reps
